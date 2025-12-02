@@ -1,36 +1,37 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+AML
+
+owner: TuUsuarioDeGitHub # <--- ¡IMPORTANTE! Cambia esto por tu usuario real
+repo: estado-core        # <--- El nombre que le pusiste a tu repositorio
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Mantum Admin
+    url: https://admin.cloudmantum.com.co/mantum/publico/auth/login/
+    
+  - name: Mantum Comercial
+    url: https://comercial.cloudmantum.com/mantum/publico/auth/login/
+    
+  - name: Mantum v223
+    url: https://v223.cloudmantum.com/mantum/publico/auth/login/
+
+  # Esta es la página rota de prueba (dará error intencionalmente)
+  - name: Prueba de Error
+    url: https://google.com/esta-pagina-no-existe-error-404
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: Estado de CloudMantum
+  introTitle: "**Estatus de Servicios**"
+  introMessage: "Monitoreo en tiempo real de las plataformas Mantum."
   navbar:
     - title: Status
-      href: /
+      url: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      url: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+  uptime: "*/5 * * * *"
