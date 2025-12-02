@@ -1,7 +1,7 @@
 AML
 
-owner: TuUsuarioDeGitHub # <--- ¡IMPORTANTE! Cambia esto por tu usuario real
-repo: estado-core        # <--- El nombre que le pusiste a tu repositorio
+owner: juanbarreamonsalve
+repo: status-page  <--- (Asegúrate que coincida con el nombre de tu repo arriba)
 
 sites:
   - name: Mantum Admin
