@@ -1,8 +1,12 @@
-# Configuración del Repositorio
+# ==========================================
+# CONFIGURACIÓN GENERAL
+# ==========================================
 owner: juanbarreamonsalve
 repo: status-page
 
-# Tus sitios a monitorear
+# ==========================================
+# TUS SITIOS A MONITOREAR
+# ==========================================
 sites:
   - name: Mantum Admin
     url: https://admin.cloudmantum.com.co/mantum/publico/auth/login/
@@ -10,36 +14,40 @@ sites:
   - name: Mantum Comercial
     url: https://comercial.cloudmantum.com/mantum/publico/auth/login/
     
-  - name: Mantum v223
+  - name: Mantum v2231
     url: https://v223.cloudmantum.com/mantum/publico/auth/login/
 
-  # SITIO DE PRUEBA (Dará error intencional para ver el color rojo)
+  # SITIO DE PRUEBA (Para ver el error rojo)
   - name: Prueba de Fallo
     url: https://google.com/esta-pagina-no-existe-error-404
 
-# Configuración visual de la página
+# ==========================================
+# DISEÑO DE LA PÁGINA WEB
+# ==========================================
 status-website:
-  # CNAME debe ser null
+  # CNAME debe ser null estrictamente
   cname: null
   
-  # Título de la pestaña
+  # Título en la pestaña del navegador
   name: Estado Mantum
   
-  # Textos de bienvenida personalizados
+  # Textos de la portada (Entre comillas para evitar errores)
   introTitle: "Bienvenidos al uptime de Mantum"
   introMessage: "Monitoreo en tiempo real de la disponibilidad de nuestros servicios."
   
   # Tu logo
   logoUrl: https://raw.githubusercontent.com/juanbarreamonsalve/status-page/main/camilobarreramonsalve-png
   
-  # Menú superior con redirección a la web comercial
+  # Menú de navegación superior
   navbar:
     - title: Estado
       url: /
     - title: Ir a Mantum Comercial
       url: https://mantum.com.co/
 
-# Frecuencia de actualización
+# ==========================================
+# HORARIOS (NO TOCAR)
+# ==========================================
 workflowSchedule:
   graphs: "0 0 * * *"
   responseTime: "0 23 * * *"
