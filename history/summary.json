@@ -59,18 +59,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/google.com.ico",
     "slug": "prueba-de-fallo",
     "status": "down",
-    "uptime": "0.07%",
-    "uptimeDay": "0.07%",
-    "uptimeWeek": "0.07%",
-    "uptimeMonth": "0.07%",
-    "uptimeYear": "0.07%",
+    "uptime": "0.02%",
+    "uptimeDay": "0.02%",
+    "uptimeWeek": "0.02%",
+    "uptimeMonth": "0.02%",
+    "uptimeYear": "0.02%",
     "time": 154,
     "timeDay": 154,
     "timeWeek": 154,
     "timeMonth": 154,
     "timeYear": 154,
     "dailyMinutesDown": {
-      "2025-12-02": 5
+      "2025-12-02": 12
     }
   }
 ]
