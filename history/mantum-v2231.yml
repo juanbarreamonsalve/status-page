@@ -1,7 +1,7 @@
 url: https://v223.cloudmantum.com/mantum/publico/auth/login/
 status: down
-code: 0
-responseTime: 0
-lastUpdated: 2026-01-06T23:17:24.010Z
+code: 502
+responseTime: 219
+lastUpdated: 2026-01-07T23:17:34.555Z
 startTime: 2025-12-02T20:50:33.028Z
 generator: Upptime <https://github.com/upptime/upptime>
